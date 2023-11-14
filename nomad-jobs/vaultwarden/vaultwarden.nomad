@@ -35,7 +35,7 @@ job "vaultwarden" {
         task "vaultwarden" {
             driver = "docker"
             config {
-                image = "docker.io/vaultwarden/server:1.29.1"
+                image = "docker.io/vaultwarden/server:1.30.0"
                 ports = ["http", "websocket"]
             }
     template {
