@@ -24,8 +24,8 @@ constraint {
       driver = "docker"
       template {
         data        = <<EOH
-MARIADB_PASSWORD={{ with nomadVar "nomad/jobs/mariadb " }}{{ .MARIADB_PASSWORD  }}{{ end }}
-MARIADB_ROOT_PASSWORD={{ with nomadVar "nomad/jobs/mariadb " }}{{ .MARIADB_ROOT_PASSWORD  }}{{ end }}
+MARIADB_PASSWORD={{ with nomadVar "nomad/jobs/mariadb" }}{{ .MARIADB_PASSWORD  }}{{ end }}
+MARIADB_ROOT_PASSWORD={{ with nomadVar "nomad/jobs/mariadb" }}{{ .MARIADB_ROOT_PASSWORD  }}{{ end }}
 EOH
         destination = "local/env.txt"
         env         = true
