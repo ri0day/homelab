@@ -61,7 +61,7 @@ EOH
         env         = true
       }
       config {
-        image = "traefik:v2.10.4"
+        image = "traefik:v3.3.4"
         network_mode = "host"
         ports = [ "http", "api","https"]
         args = [
