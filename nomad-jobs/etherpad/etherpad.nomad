@@ -23,7 +23,7 @@ constraint {
             port = "web"
             tags = [
 "traefik.enable=true",
-"traefik.http.routers.etherpad.rule=Host(`etherpad.boringbear.eu.org`)",
+"traefik.http.routers.etherpad.rule=Host(`etherpad.mydomain.com`)",
 "traefik.http.routers.etherpad.entrypoints=websecure",
 "traefik.http.routers.etherpad.tls=true",
 "traefik.http.routers.etherpad.tls.certresolver=letsencrypt"
