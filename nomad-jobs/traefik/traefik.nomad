@@ -53,8 +53,6 @@ job "traefik" {
       driver = "docker"
       template {
         data        = <<EOH
-CF_API_EMAIL={{ with nomadVar "nomad/jobs/traefik" }}{{ .CF_API_EMAIL }}{{ end }}
-CF_API_KEY={{ with nomadVar "nomad/jobs/traefik" }}{{ .CF_API_KEY }}{{ end }}
 CF_DNS_API_TOKEN={{ with nomadVar "nomad/jobs/traefik" }}{{ .CF_DNS_API_TOKEN }}{{ end }}
 EOH
         destination = "local/env.txt"
